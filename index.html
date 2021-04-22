@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: dzy
  * @Date: 2020-11-18 14:19:12
- * @LastEditTime: 2021-04-22 17:24:14
+ * @LastEditTime: 2021-04-22 18:37:02
  * @LastEditors: dzy
  * @Reference: 
 -->
@@ -14,16 +14,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
   <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
-  <script src="./index.js"></script>
+
 </head>
 <body>
   <div class="parent">
-    <div class="child-item" onmouseover="widthToDouble(this)" onmouseout="widthToHalf(this)">1</div>
-    <div class="child-item" onmouseover="widthToDouble(this)" onmouseout="widthToHalf(this)">2</div>
-    <div class="child-item" onmouseover="widthToDouble(this)" onmouseout="widthToHalf(this)">3</div>
-    <div class="child-item" onmouseover="widthToDouble(this)" onmouseout="widthToHalf(this)">4</div>
-    <div class="child-item" onmouseover="widthToDouble(this)" onmouseout="widthToHalf(this)">5</div>
+    <div class="child-item" onmouseenter="widthToDouble(this)" onmouseleave="widthToHalf(this)">1</div>
+    <div class="child-item" onmouseenter="widthToDouble(this)" onmouseleave="widthToHalf(this)">2</div>
+    <div class="child-item" onmouseenter="widthToDouble(this)" onmouseleave="widthToHalf(this)">3</div>
+    <div class="child-item" onmouseenter="widthToDouble(this)" onmouseleave="widthToHalf(this)">4</div>
+    <div class="child-item" onmouseenter="widthToDouble(this)" onmouseleave="widthToHalf(this)">5</div>
   </div>
 </body>
+<script src="./index.js"></script>
+
 </html>
 
