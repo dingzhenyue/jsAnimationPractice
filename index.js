@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: dzy
  * @Date: 2021-04-22 11:08:28
- * @LastEditTime: 2021-04-22 16:22:57
+ * @LastEditTime: 2021-04-22 16:57:20
  * @LastEditors: dzy
  * @Reference: 
  */
@@ -17,7 +17,6 @@ let widthToDouble = function (div) {
     }
     if (intervalIn) {
         clearInterval(intervalIn);
-        debugger
     }
     intervalIn = setInterval(function () {
         let otherDiv = Array.from(document.querySelectorAll('.child-item')).filter(item => item !== div);
