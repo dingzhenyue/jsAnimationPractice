@@ -1,0 +1,19 @@
+.parent {
+    background-color: pink;
+    height: 100px;
+    width: 500px;
+    font-size:0
+}
+.child-item {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+}
+.child-item:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+<!--
+ * @Description: 
+ * @Author: dzy
+ * @Date: 2021-04-22 10:41:03
+ * @LastEditTime: 2021-04-22 11:26:46
+ * @LastEditors: dzy
+ * @Reference: 
+-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<button>放大</button>
+<button>缩小</button>
+<div class="box" style="left: 0px"></div>
+<script>
+    var btn = document.getElementsByTagName("button")[0];
+    var btn2 = document.getElementsByTagName("button")[1];
+    var div = document.getElementsByTagName("div")[0];
+    
+    //匀速运动
+    btn.onclick = function () {
+        let width = div.offsetWidth;
+        let interval = setInterval(function () {
+            if (2 * width === div.offsetWidth) {
+                clearInterval(interval);
+            } else {
+                div.style.width = div.offsetWidth + 1 + "px";
+            }
+        }, 10);
+    }
+    //匀速运动
+    btn2.onclick = function () {
+        let width = div.offsetWidth;
+        let interval = setInterval(function () {
+            if (width === 2 * div.offsetWidth) {
+                clearInterval(interval);
+            }
+            div.style.width = div.offsetWidth - 1 + "px";
+        }, 10);
+    }
+</script>
+</body>
+</html>
