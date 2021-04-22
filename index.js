@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: dzy
  * @Date: 2021-04-22 11:08:28
- * @LastEditTime: 2021-04-22 18:03:50
+ * @LastEditTime: 2021-04-22 18:10:44
  * @LastEditors: dzy
  * @Reference: 
  */
@@ -11,7 +11,7 @@ let intervalOut = null;
 const childDefaultWidth = 100;
 const parentWidth = 500;
 // 定时动画间隔10ms
-const TIME = 50;
+const TIME = 10;
 const ONCE_MOVE_PX = 1;
 /**
  * 鼠标移入，宽度变成2倍
